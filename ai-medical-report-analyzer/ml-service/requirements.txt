@@ -1,0 +1,6 @@
+flask
+pytesseract
+pillow
+pdfplumber
+spacy
+transformers
