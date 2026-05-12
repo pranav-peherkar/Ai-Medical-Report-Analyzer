@@ -11,7 +11,7 @@ const UploadReport = () => {
     formData.append('report', file);
 
     const response = await axios.post(
-      'http://localhost:5000/api/report/upload',
+      process.env.REACT_APP_API_URL + '/api/report/upload',
       formData
     );
 

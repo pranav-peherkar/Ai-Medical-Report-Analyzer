@@ -10,7 +10,7 @@ const upload = multer({ dest: 'uploads/' });
 router.post('/upload', upload.single('report'), async (req, res) => {
   try {
     const response = await axios.post(
-      'http://localhost:8000/analyze',
+      'https://medical-ml-onrender-com.onrender.com',
       {
         path: req.file.path,
       }
